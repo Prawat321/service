@@ -5,13 +5,7 @@ import "../assets/main.css"
 import logo from "../assets/images/aboutlogo.jpg"
 import bike from"../assets/images/bike3.jpg"
 import scooty from"../assets/images/scooty3.jpg"
-import { MdLocationOn } from "react-icons/md";
-import { IoCall } from "react-icons/io5";
-import { BsWhatsapp } from "react-icons/bs";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaSquareTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa6";
+
 import Footer from "../footer/Footer"
 function About(){
     return(
@@ -163,12 +157,7 @@ Vehical Repair Service? <br />
                   <h3>About This Learn </h3>
                  
                   </div> <br />
-                  <div className="container-fluid">
-                  <h1><FaFacebookSquare /> <FaInstagramSquare /><FaSquareTwitter /><FaLinkedin /></h1>
-                  <h5><MdLocationOn /> Parasme Softwere and Technology Niwaru road Jhotwara Jaipur Rajasthan</h5>
-                 <h5><IoCall /> This is our contect number for any inquary 9783887270</h5> 
-                 <h5><BsWhatsapp /> This is our Whatsapp number for any inquary 9783887270</h5> 
-                  </div> <br /><br />
+                <br /><br />
                   <Footer/>
         </>
     )

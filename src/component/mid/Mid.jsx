@@ -13,6 +13,7 @@ import car5 from "../assets/images/car5.jpg"
 import car6 from "../assets/images/car6.jpg"
 import Button from 'react-bootstrap/Button';
 
+
 function Mid() {
     return (
         <>
@@ -63,7 +64,7 @@ function Mid() {
                     <img className="col-md-4 col-sm-4 col-lg-3"src={car6} alt="" />
                 </div>
                    <div className="text-center " style={{marginTop:"3%", padding:"5px 15px"}}>
-                <Button variant="danger " >Danger</Button>{' '}
+                <Button variant="danger " > Learn More</Button>
                    </div>
                 </div>
                 </div>

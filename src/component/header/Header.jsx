@@ -13,11 +13,12 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <div> 
-      <div className='Navbar'>
+      <div className='Nav1' style={{position:"sticky"}}>
 {[ 'sm'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3 Navbar ">
-          <Container fluid>
-            <Navbar.Brand href="#">
+  <div className='Navbar' >
+        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3 Navbar " >
+          <Container fluid >
+            <Navbar.Brand href="#" >
             <img src={logo}alt="" style={{height:"50%", width:"50%", marginTop:"1%"}} />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -45,18 +46,22 @@ function Header() {
                   >
                   
                      
-                    <NavDropdown.Item href="Cars">Cars</NavDropdown.Item>
-                    <NavDropdown.Item href="Bikes">
+                    <NavDropdown.Item href=""> <Link to="/Cars" style={{textDecoration:"none"}}>Cars</Link></NavDropdown.Item>
+                    <NavDropdown.Item href="">
+                      <Link to="/Bikes" style={{textDecoration:"none"}}>
                   Bikes
+                  </Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="Scooty">
+                    <NavDropdown.Item href="">
+                      <Link to="/Scooty" style={{textDecoration:"none"}}>
                       Scooty
+                      </Link>
                     </NavDropdown.Item>
                    
 
                   </NavDropdown>
-                  <Link to="/Login" style={{textDecoration:"none"  ,color:"black"}}>Login</Link>
+                  <Link to="/" style={{textDecoration:"none"  ,color:"black"}}>Logout</Link>
                 </Nav>
                 
                 <Form className="d-flex">
@@ -72,12 +77,13 @@ function Header() {
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
+        </div>
       ))}
-
+</div>
 </div>
    
   
-      </div>
+     
      
   )
 }

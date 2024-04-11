@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import login from "../assets/images/loginimg.jpg"
 import "../assets/main.css"
-import { Link } from "react-router-dom";
+import { Link  } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 function Login(){
+  const navigate = useNavigate()
 
    const[name, setName]=useState("")
    const[email, setEmail]=useState("")
@@ -11,6 +14,7 @@ function Login(){
 
    const loginSubmt = (e) =>{
     e.preventDefault()
+    navigate('/Home')
     console.log("Error")
     if(name.trim() == false ){
      alert("Please Enter Name")

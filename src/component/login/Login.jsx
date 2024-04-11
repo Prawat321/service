@@ -63,7 +63,8 @@ function Login(){
             <label htmlFor="">Enter the Password</label> <br />
             <input type="Email" size={30}value={Password} onChange={(e) => setPassword(e.target.value)} />
             <br /> <br />
-            <button className="btn btn-warning mb-3 SignUPForm_Button" type="submit" onClick={loginSubmt}> Login</button> <br />
+            <Link to="/Home">
+            <button className="btn btn-warning mb-3 SignUPForm_Button" type="submit" onClick={loginSubmt}> Login</button> </Link><br />
               <h3 style={{marginLeft:"17%"}}>
                 <Link to="/signup">Create a account </Link> </h3> 
         </div>
